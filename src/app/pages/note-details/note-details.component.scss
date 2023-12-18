@@ -1,0 +1,37 @@
+@import "../../../main-styles.scss";
+.form-container{
+   max-width:500px ;
+   margin: auto;
+   margin-top: 50px;
+}
+.control{
+     padding: 10px;
+      .is-primary{
+         background-color: $green;
+         &:hover{
+            transform: scale(1.02);
+            background-color:rgb(17, 148, 17) ;
+         }
+      }
+      .is-text{
+         background-color: $red;
+         color: $light;
+         text-decoration: none;
+         margin-left: 10px;
+         &:hover{
+            transform: scale(1.02);
+            background-color:rgb(255, 58, 58) ;
+         }
+      }
+   
+}
+input,textarea{
+   &.ng-invalid.ng-touched{
+      border-color: $red;
+      &:focus{
+         box-shadow: 0px 0px 3px 0px $red;
+      }
+      
+   }
+}
+
